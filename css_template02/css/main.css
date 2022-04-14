@@ -1,0 +1,42 @@
+/* a태그 리셋하자 */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* common style */
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+body {
+    background: #fff;
+    font-size: 20px;
+    color: #123456;
+    font-family: sans-serif;
+}
+
+#wrapper {
+    /* background: gainsboro; */
+    width: 80%;
+    margin: 0 auto;
+}
+
+#wrapper .side-bar {
+    width: 20%;
+    background: orange;
+    float: left;
+    margin-right: 1%;
+}
+
+#wrapper .side-bar .logo {
+    background: pink;
+}
+
+#wrapper .main {
+    width: 79%;
+    float: right;
+    background: gainsboro;
+}
